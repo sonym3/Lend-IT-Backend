@@ -12,7 +12,7 @@ import javax.ws.rs.core.Application;
  *
  * @author sonym
  */
-@javax.ws.rs.ApplicationPath("webresources")
+@javax.ws.rs.ApplicationPath("lendit")
 public class ApplicationConfig extends Application {
 
     @Override
@@ -29,7 +29,8 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(lenditwebservice.GenericResource.class);
+        resources.add(lenditwebservice.Credentials.class);
+        resources.add(lenditwebservice.DatabaseConnection.class);
     }
     
 }
