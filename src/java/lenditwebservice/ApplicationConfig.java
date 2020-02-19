@@ -29,8 +29,8 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(lenditwebservice.Credentials.class);
         resources.add(lenditwebservice.DatabaseConnection.class);
+        resources.add(lenditwebservice.UserResources.class);
     }
     
 }
